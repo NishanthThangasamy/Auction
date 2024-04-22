@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        android:id="@+id/middler"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/edit_text_rounded_corner"
+        android:backgroundTint="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="50dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="50dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/disclaimer">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Disclaimer"
+                        android:textSize="18dp"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppins_light"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18dp"
+                        android:text="Participation in this blind auction implies your understanding and acceptance of the following terms."
+                        android:fontFamily="@font/poppins_light"
+                        android:textStyle="bold"
+                        android:textSize="17dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bidders acknowledge that bids are binding commitments to purchase if they are the highest bidder at the conclusion of the auction."
+                        android:layout_marginTop="18dp"
+                        android:fontFamily="@font/poppins_light"
+                        android:textStyle="bold"
+                        android:textSize="17dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18dp"
+                        android:text="Failure to complete a purchase after winning may result in penalties as outlined by the auction rules. It's recommended to thoroughly understand these terms before participating."
+                        android:fontFamily="@font/poppins_light"
+                        android:textStyle="bold"
+                        android:textSize="17dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18dp"
+                        android:text="It's recommended to thoroughly understand these terms before participating."
+                        android:fontFamily="@font/poppins_light"
+                        android:textStyle="bold"
+                        android:textSize="17dp"/>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/UnderstoodButton"
+                        style="@android:style/Widget.Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/button_color"
+                        android:fontFamily="@font/sf_pro_display"
+                        android:padding="9dp"
+                        android:text="I Understood"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp"
+                        android:textStyle="bold">
+                    </androidx.appcompat.widget.AppCompatButton>
+                </LinearLayout>
+            </RelativeLayout>
+
+</RelativeLayout>

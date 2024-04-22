@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Resgister_MainActivity"
+    android:background="@color/zerodha_topcolor"
+    android:padding="25dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/top"
+        >
+
+        <ImageView
+            android:id="@+id/backButtom"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/back_button" />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <ImageView
+
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/app_icon"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/middle"
+        android:layout_below="@id/top"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp">
+        
+        <TextView
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create your account"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            />
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="40dp"
+            android:src="@mipmap/imageotp"/>
+        
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/middle"
+        android:layout_marginTop="50dp">
+    <LinearLayout
+        android:id="@+id/PhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+91"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:padding="10dp"
+            android:gravity="center_vertical"/>
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:inputType="phone"
+            android:hint="Phone Number"
+            android:background="@drawable/edittext_bg"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_generate_Otp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/PhoneNumber"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/button_color"
+            android:text="Continue" />
+    </RelativeLayout>
+
+</RelativeLayout>
+<!--    <EditText-->
+<!--        android:id="@+id/otp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:inputType="number"-->
+<!--        android:layout_below="@id/btn_generate_Otp"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:hint="Otp"-->
+
+<!--       />-->
+
+<!--    <Button-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/btn_verify_Otp"-->
+<!--        android:text="Verify Otp"-->
+<!--        android:layout_below="@id/otp"-->
+<!--        android:textColor="@color/red"-->
+<!--        android:layout_marginTop="5dp"-->
+
+<!--       />-->
+

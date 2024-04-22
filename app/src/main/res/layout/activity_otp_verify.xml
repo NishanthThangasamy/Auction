@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OtpVerify"
+    android:background="@color/zerodha_topcolor"
+    android:padding="25dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/top"
+        >
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="3dp"
+            android:src="@drawable/app_icon" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/middle"
+        android:layout_below="@id/top"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verify your Otp"
+            android:textSize="26dp"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            />
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="40dp"
+            android:src="@mipmap/imageotp"/>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/middle"
+        android:layout_marginTop="50dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/otp">
+            <EditText
+                android:id="@+id/digit1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginLeft="5dp"
+                android:inputType="number"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"
+                android:background="@drawable/otp_background"
+                android:padding="10dp"
+                />
+            <EditText
+                android:id="@+id/digit2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="6dp"
+                android:inputType="number"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/otp_background"
+                android:textAlignment="center"
+                android:padding="10dp"
+                />
+            <EditText
+                android:id="@+id/digit3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:textAlignment="center"
+                android:layout_marginRight="6dp"
+                android:inputType="number"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/otp_background"
+                android:padding="10dp"
+                />
+            <EditText
+                android:id="@+id/digit4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:textAlignment="center"
+                android:layout_marginRight="6dp"
+                android:inputType="number"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/otp_background"
+                android:padding="10dp"
+                />
+            <EditText
+                android:id="@+id/digit5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:textAlignment="center"
+                android:layout_marginRight="6dp"
+                android:inputType="number"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/otp_background"
+                android:padding="10dp"
+                />
+            <EditText
+                android:id="@+id/digit6"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/otp_background"
+                android:padding="10dp"
+                />
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_verify_Otp"
+            android:text="Verify Otp"
+            android:layout_below="@id/otp"
+            android:textColor="@color/white"
+            android:background="@drawable/button_color"
+            android:layout_marginTop="40dp"
+            />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#FF0000</color>
+    <color name="blue">#3574EF</color>
+    <color name="yellow">#FFEB3B</color>
+    <color name="light_gray">#D3D3D3</color>
+    <color name="dark_gray">#A9A9A9</color>
+    <color name="button_color">#3F51B5</color>
+    <color name="edittext_background_color">#F5F5F5</color> <!-- Replace #F5F5F5 with your desired EditText background color -->
+    <color name="edittext_stroke_color">#CCCCCC</color> <!-- Replace #CCCCCC with your desired EditText stroke color -->
+    <color name="login_button_color">#FE5722</color>
+    <color name="zerodha_background">#FEFEFE</color>
+    <color name="zerodha_navcolor">#BDB6B6</color>
+    <color name="zerodha_topcolor">#E8EAEA</color>
+
+</resources>

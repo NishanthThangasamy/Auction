@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Image upload section -->
+    <TextView
+        android:id="@+id/text_upload_images"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload Images"
+        android:textSize="20sp"
+        android:padding="16dp"/>
+
+    <!-- Image upload buttons (3 to 4 buttons) -->
+    <LinearLayout
+        android:id="@+id/layout_image_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/text_upload_images"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/button_upload_image1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Image 1"/>
+
+        <Button
+            android:id="@+id/button_upload_image2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Image 2"/>
+
+        <!-- Add more buttons for additional images if needed -->
+
+    </LinearLayout>
+
+    <!-- Product details section -->
+    <TextView
+        android:id="@+id/text_product_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Product Details"
+        android:textSize="20sp"
+        android:padding="16dp"
+        android:layout_below="@id/layout_image_buttons"/>
+
+    <!-- EditText for product name -->
+    <EditText
+        android:id="@+id/edit_text_product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Product Name"
+        android:padding="8dp"
+        android:layout_below="@id/text_product_details"/>
+
+    <!-- EditText for product description -->
+    <EditText
+        android:id="@+id/edit_text_product_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Product Description"
+        android:padding="8dp"
+        android:layout_below="@id/edit_text_product_name"/>
+
+    <!-- Document upload section -->
+    <TextView
+        android:id="@+id/text_upload_document"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload Documents"
+        android:textSize="20sp"
+        android:padding="16dp"
+        android:layout_below="@id/edit_text_product_description"/>
+
+    <!-- Document upload button -->
+    <Button
+        android:id="@+id/button_upload_document"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Document"
+        android:layout_below="@id/text_upload_document"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Bidding section -->
+    <TextView
+        android:id="@+id/text_bidding_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bidding Price"
+        android:textSize="20sp"
+        android:padding="16dp"
+        android:layout_below="@id/button_upload_document"/>
+
+    <!-- EditText for bidding price -->
+    <EditText
+        android:id="@+id/edit_text_bidding_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Bidding Price"
+        android:inputType="numberDecimal"
+        android:padding="8dp"
+        android:layout_below="@id/text_bidding_price"/>
+
+    <include layout="@layout/activity_bottom_nav" />
+
+
+</RelativeLayout>

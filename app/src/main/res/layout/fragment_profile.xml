@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zerodha_topcolor"
+    tools:context=".ProfileFragment">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/topbar"
+                tools:context=".UserProfilePage"
+                android:paddingTop="10dp"
+                android:background="@color/white">
+
+
+                <TextView
+                    android:id="@+id/profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/blue"
+                    android:text="Profile"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="25dp"
+                    android:fontFamily="@font/sf_pro_display"
+                    android:textStyle="bold">
+
+                </TextView>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/middler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/topbar"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="100dp"
+                android:background="@drawable/edit_text_rounded_corner"
+                android:backgroundTint="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"
+                android:paddingRight="30dp"
+                android:paddingBottom="15dp">
+
+                <ImageView
+                    android:id="@+id/profileac"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/account_user_person">
+
+                </ImageView>
+
+                <LinearLayout
+                    android:id="@+id/middle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/profileac"
+                    android:orientation="vertical">
+                    <!-- User Name -->
+
+                    <TextView
+                        android:id="@+id/username"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_light"
+                        android:text="Name:"
+                        android:textColor="@color/blue"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/user_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_toRightOf="@id/username"
+                        android:fontFamily="@font/poppins_light"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+
+                    <TextView
+                        android:id="@+id/useremail"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_light"
+                        android:text="Email:"
+                        android:textColor="@color/blue"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/user_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_toRightOf="@id/useremail"
+                        android:fontFamily="@font/poppins_light"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                    <!-- User Phone Number -->
+
+                    <TextView
+                        android:id="@+id/userphone"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_light"
+                        android:text="Phone:"
+                        android:textColor="@color/blue"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/user_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_toRightOf="@id/userphone"
+                        android:fontFamily="@font/poppins_light"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+
+                    <TextView
+                        android:id="@+id/useraddress"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_light"
+                        android:text="Address:"
+                        android:textColor="@color/blue"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/user_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_toRightOf="@id/useraddress"
+                        android:fontFamily="@font/poppins_light"
+                        android:text="**"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/middle"
+
+                    >
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/logout_button"
+                        style="@android:style/Widget.Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/button_color"
+                        android:fontFamily="@font/sf_pro_display"
+                        android:padding="9dp"
+                        android:text="Logout"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp"
+                        android:textStyle="bold">
+                    </androidx.appcompat.widget.AppCompatButton>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/update_profile"
+                        style="@android:style/Widget.Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/logout_button"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/button_color"
+                        android:fontFamily="@font/sf_pro_display"
+                        android:padding="9dp"
+                        android:text="Updateprofile"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp"
+                        android:textStyle="bold">
+                    </androidx.appcompat.widget.AppCompatButton>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+</FrameLayout>
+
+
+

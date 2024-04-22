@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BiddingEngineFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:background="@color/zerodha_topcolor"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bidding Engine"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:background="@color/zerodha_background"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:fontFamily="@font/poppins_light"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"/>
+        <!-- Item Image -->
+            <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:background="@color/white"
+            android:layout_below="@id/textViewHeading"
+            android:src="@mipmap/images"
+           />
+
+        <!-- Item Description -->
+
+        <!-- Item Rate -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/imageView"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:id="@+id/boxndrprice">
+        <TextView
+            android:id="@+id/boxno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16sp"
+            android:layout_weight="3"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:textColor="@android:color/holo_red_dark" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/leaderboard"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="110dp"
+            android:padding="10dp"
+            android:layout_below="@id/boxndrprice"
+            android:layout_marginTop="18dp" />
+
+
+
+        <TextView
+            android:id="@+id/bidrate"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/leaderboard"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="times"
+            android:text="BidPrice"
+            android:textSize="50dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/timerTextView"
+            android:layout_below="@id/bidrate"
+            android:textSize="25dp"
+            android:layout_marginStart="16dp"
+            android:hint="00"
+            android:textColor="@android:color/holo_red_dark"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnprice"
+            android:layout_below="@id/timerTextView"
+            android:layout_marginTop="45dp"
+            android:orientation="vertical"
+            android:padding="10dp"
+            >
+
+            <LinearLayout
+                android:id="@+id/btn2550"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                >
+                <Button
+                    android:onClick="onNumberClick"
+                    android:id="@+id/button25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:background="@color/blue"
+                    android:layout_weight="1"
+                    android:fontFamily="times"
+                    android:text="25"
+                    android:textStyle="bold"/>
+
+
+                <Button
+                    android:onClick="onNumberClick"
+                    android:id="@+id/button50"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/blue"
+                    android:layout_weight="1"
+                    android:fontFamily="times"
+                    android:text="50"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                >
+                    <Button
+                        android:onClick="onNumberClick"
+                        android:id="@+id/button100"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:background="@color/blue"
+                        android:layout_weight="1"
+                        android:fontFamily="times"
+                        android:text="100"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:onClick="onNumberClick"
+                        android:id="@+id/button200"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/blue"
+                        android:fontFamily="times"
+                        android:layout_weight="1"
+                        android:text="200"
+                        android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_auction"
+        android:title="Auction"
+        android:icon="@drawable/auction"
+        android:background="@android:color/transparent"/>
+    <item
+        android:id="@+id/navigation_blind_auction"
+        android:title="Blind Auction"
+        android:icon="@drawable/blind_auction"
+        android:background="@android:color/transparent"/>
+    <item
+        android:id="@+id/navigation_home"
+        android:title="Home"
+        android:icon="@drawable/baseline_home_24"
+        android:background="@android:color/transparent"/>
+    <item
+        android:id="@+id/navigation_auction_history"
+        android:title="History"
+        android:icon="@drawable/baseline_history_24"
+        android:background="@android:color/transparent"/>
+    <item
+        android:id="@+id/navigation_account_auction"
+        android:title="Account"
+        android:icon="@drawable/account"
+        android:background="@android:color/transparent"
+        />
+</menu>

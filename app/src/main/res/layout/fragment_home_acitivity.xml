@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zerodha_topcolor"
+    tools:context=".Home_acitivity">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <!-- App name at the top -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="82dp">
+
+        <TextView
+            android:id="@+id/text_app_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/zerodha_background"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:fontFamily="@font/poppins_light"
+            android:text="BiddyBuy"
+            android:textStyle="bold"
+            android:textSize="28dp" />
+
+        <!-- Search bar -->
+
+        <SearchView
+            android:id="@+id/edit_text_search"
+            android:layout_width="410dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_app_name"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edittext_background"
+            android:iconifiedByDefault="false"
+            android:queryHint="Search Here"
+            android:searchHintIcon="@color/black"
+            android:theme="@style/ThemeOverlay.Material3.Search" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_text_search"
+            android:layout_marginTop="5dp"
+            android:background="@color/zerodha_topcolor"
+            android:clipToPadding="false"
+            android:scrollbars="vertical" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Under Construction"
+            android:textSize="24dp"
+            />
+
+
+    </RelativeLayout>
+
+</FrameLayout>

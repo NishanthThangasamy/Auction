@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Auction"
+        tools:targetApi="31">
+        <activity
+
+            android:name=".Resgister_MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Get_in"
+            android:exported="false" />
+        <activity
+            android:name=".SignUpMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OtpVerify"
+
+            android:exported="false" />
+        <activity
+            android:name=".loginMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Bidding_engine"
+            android:exported="false" />
+        <activity
+            android:name=".BiddingEngine"
+            android:exported="false" />
+        <activity
+            android:name=".Sell_MainActivity3"
+            android:exported="false" />
+        <activity
+            android:name=".BottomNavActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Icon_MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

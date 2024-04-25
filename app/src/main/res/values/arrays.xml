@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="category_options">
+        <item>   </item>
+        <item>Car</item>
+        <item>Bus</item>
+        <item>Bike</item>
+        <item>Auto</item>
+        <item>Lorry</item>
+    </string-array>
+</resources>

@@ -179,32 +179,19 @@
                         android:textSize="20dp" />
 
                     <TextView
-                        android:id="@+id/fileTextView"
+                        android:id="@+id/tvFileNames"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
-                        android:textColor="@color/black"
-                        android:textSize="20sp"
-                        android:visibility="gone" />
+                        android:layout_below="@id/btnUploadImage"
+                        android:layout_marginTop="16dp"/>
 
-
-                    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                        xmlns:app="http://schemas.android.com/apk/res-auto"
-                        xmlns:tools="http://schemas.android.com/tools"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                        <Button
-                            android:id="@+id/upload_button"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Upload Image"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <Button
+                        android:id="@+id/btnUploadImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload Image"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"/>
 
                     <TextView
                         android:id="@+id/document"
@@ -216,34 +203,25 @@
                         android:textColor="@color/black"
                         android:textSize="20dp" />
 
+
                     <TextView
-                        android:id="@+id/fileDocumentView"
+                        android:id="@+id/tvdocumentname"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_below="@id/document"
-                        android:layout_marginTop="16dp"
-                        android:textColor="@color/black"
-                        android:textSize="20sp"
-                        android:visibility="gone"/>
+                        android:layout_below="@id/btnUploadDocument"
+                        android:layout_marginTop="16dp"/>
+
+                    <Button
+                        android:id="@+id/btnUploadDocument"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload Document"
+                        android:layout_below="@id/btnUploadImage"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="16dp"/>
 
 
-                    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                        xmlns:app="http://schemas.android.com/apk/res-auto"
-                        xmlns:tools="http://schemas.android.com/tools"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
 
-                        <Button
-                            android:id="@+id/documentupload_button"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Upload Document"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
 
                     <TextView
                         android:id="@+id/textstartprice"
